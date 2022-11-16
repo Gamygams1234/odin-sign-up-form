@@ -1,0 +1,172 @@
+body {
+  background-color: #f9fafb;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.padding-container {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+button {
+  background-color: #596D48;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.mb-5 {
+  margin-bottom: 5rem;
+}
+
+.content {
+  min-height: 100vh;
+}
+
+.two-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+}
+
+.top {
+  background-image: url(../images/halie-west-25xggax4bSA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.top .title {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.top .title img {
+  height: 5rem;
+  width: auto;
+}
+.top .title h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.sign-up {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.sign-up p {
+  font-size: 1.5rem;
+}
+
+.form-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+.form-grid .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.form-grid .input label {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.form-grid .input input {
+  border-radius: 4px;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.form-grid .input input:focus {
+  outline: none;
+  border-color: #665df5;
+  -webkit-box-shadow: 0 0 2px #665df5;
+          box-shadow: 0 0 2px #665df5;
+}
+.form-grid .warning label {
+  color: red;
+}
+.form-grid .warning #warning-msg {
+  color: red;
+  margin-top: 1rem;
+}
+.form-grid .warning input {
+  outline: none;
+  border-color: red;
+  -webkit-box-shadow: 0 0 2px red;
+          box-shadow: 0 0 2px red;
+}
+
+.log-in a {
+  color: #596D48;
+}
+
+@media (min-width: 768px) {
+  .two-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 3fr;
+    grid-template-columns: 1fr 3fr;
+  }
+  .form-grid {
+    -ms-grid-columns: 1fr 1rem 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .form-grid .input input {
+    width: 75%;
+  }
+  .form-grid .input button {
+    width: 75%;
+  }
+}
+@media (min-width: 992px) {
+  .form-grid .input input {
+    width: 50%;
+  }
+  .form-grid .input button {
+    width: 50%;
+  }
+}
